@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\8yUdg_tXaIC6vYobRels5xqAUmpXFv46jjXYpJ4IwYk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\qUKpgAztw-XzrflWDh-nAmYBjjt09ta_LTBaa3ekqmw=.hash",
       "Source": "C:\\Users\\Rasmus\\repos\\HackLock\\HackLock\\HackLock\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\HackLock.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/HackLock.Client.dll.gz"
     },
@@ -191,7 +191,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\C-63VAg8Rg46fOk0MRlF8qr1zSm7ZwGuDrRAlXUEbcw=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LC9oOktpt9VT4jvoYifp8SB0tpGNd5TqvklnE2WjfSs=.hash",
       "Source": "C:\\Users\\Rasmus\\repos\\HackLock\\HackLock\\HackLock\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\HackLock.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/HackLock.Shared.dll.gz"
     },
@@ -266,12 +266,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\b3uIhF6Ml7pMocXHd7dGDfTEyFQifvRisAKmyyvmPXQ=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6Sbnzj7LT8_8l36AjkQja-dru_TQHKtz8jYTjyOpVb8=.hash",
       "Source": "C:\\Users\\Rasmus\\repos\\HackLock\\HackLock\\HackLock\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\HackLock.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/HackLock.Client.pdb.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\v0Zv8w8uOrR7vglVlppbkLnXBEdnRTMur_qznTTtmKI=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Tj552wo0Q3a7M61cjAHzmwVGjPhq_qnrQgutXk21oLQ=.hash",
       "Source": "C:\\Users\\Rasmus\\repos\\HackLock\\HackLock\\HackLock\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\HackLock.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/HackLock.Shared.pdb.gz"
     },
@@ -296,7 +296,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Vc5mt5MVORLlBET3naHGt-RbrXLkVang8C0VowEfcRQ=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\37zdmJ-0VTEkY7tl6xTMT12MgAYUswhoEjnRsBy240k=.hash",
       "Source": "C:\\Users\\Rasmus\\repos\\HackLock\\HackLock\\HackLock\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }
