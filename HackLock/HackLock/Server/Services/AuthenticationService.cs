@@ -9,29 +9,29 @@ namespace HackLock.Server.Services
 {
     public interface IAuthenticationService
     {
-        public Task<bool> AuthenticateUser(string username, string password);
+        public Task<bool> AuthenticateUser(string userName, string password);
     }
 
     public class AuthenticationService : IAuthenticationService
     {
-        private readonly SignInManager<ApplicationIdentityUser> _signInManager;
+        private readonly UserManager<ApplicationIdentityUser> _userManager;
 
-        public AuthenticationService(SignInManager<ApplicationIdentityUser> signInManager)
+        public AuthenticationService(UserManager<ApplicationIdentityUser> userManager)
         {
-            _signInManager = signInManager;
+            _userManager = userManager;
         }
 
 
-        public async Task<bool> AuthenticateUser(string username, string password)
+        public async Task<bool> AuthenticateUser(string userName, string password)
         {
             var user = 
-                _signInManager.UserManager.Users
-                    .FirstOrDefault(u => u.UserName == username);
+                _userManager.Users
+                    .FirstOrDefault(u => u.UserName == userName);
             if (user == null)
                 return false;
 
-            var result = await _signInManager.CheckPasswordSignInAsync(user, password, false);
-            return result.Succeeded;
+            var result = await _userManager.CheckPasswordAsync(user, password);
+            return result;
         }
     }
 }

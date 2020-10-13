@@ -13,6 +13,8 @@ namespace HackLock.Server.Services
         public Task<bool> RegisterUser(ApplicationIdentityUser user, string password);
         public Task<bool> RemoveUser(ApplicationIdentityUser user);
         public Task<bool> RemoveUser(string id);
+
+        public ApplicationIdentityUser GetUser(string userName);
     }
 
     public class UserService : IUserService
@@ -48,6 +50,11 @@ namespace HackLock.Server.Services
 
             var result = await _userManager.DeleteAsync(user);
             return result.Succeeded;
+        }
+
+        public ApplicationIdentityUser GetUser(string userName)
+        {
+            return _userManager.Users.FirstOrDefault(u => u.UserName == userName);
         }
     }
 }

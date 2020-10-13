@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using HackLock.Server.Data;
 using HackLock.Server.Data.Models;
+using HackLock.Server.hardware;
 using HackLock.Server.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,12 +29,7 @@ namespace HackLock.Server
             services.AddRazorPages();
 
 
-            //dependency injection
-            services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IAuthenticationService, AuthenticationService>();
-            services.AddTransient<ILoggingService, LoggingService>();
-
-
+            
 
             services.AddDbContext<ApplicationDbContext>(options =>
             {
@@ -50,7 +46,12 @@ namespace HackLock.Server
 
             }).AddEntityFrameworkStores<ApplicationDbContext>();
 
+            //dependency injection
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddScoped<ILoggingService, LoggingService>();
 
+            services.AddSingleton<IDoorManipulator, SimulatedDoorManipulator>();
 
         }
 
