@@ -30,6 +30,8 @@ namespace HackLock.Server
 
             //dependency injection
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IAuthenticationService, AuthenticationService>();
+            services.AddTransient<ILoggingService, LoggingService>();
 
 
 

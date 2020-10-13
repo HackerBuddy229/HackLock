@@ -14,6 +14,6 @@ namespace HackLock.Server.Data
             : base(dbContextOptions){}
 
         
-
+        public DbSet<EntryLogItem> EntryLog { get; set; }
     }
 }
