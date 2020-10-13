@@ -1,13 +1,11 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Linq;
 using HackLock.Server.Data;
-using Microsoft.AspNetCore.Identity;
+using HackLock.Server.Data.Models;
+using HackLock.Server.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace HackLock.Server
@@ -29,12 +27,18 @@ namespace HackLock.Server
             services.AddControllersWithViews();
             services.AddRazorPages();
 
+
+            //dependency injection
+            services.AddTransient<IUserService, UserService>();
+
+
+
             services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseInMemoryDatabase("TestingDb");
             });
 
-            services.AddIdentityCore<IdentityUser>(c =>
+            services.AddIdentityCore<ApplicationIdentityUser>(c =>
             {
                 c.Password.RequireNonAlphanumeric = false;
                 c.Password.RequireUppercase = false;

@@ -228,3 +228,7 @@ C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Server\bin\Debug\netcoreapp3.1\
 C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Server\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Server\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Server\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Server\obj\Debug\netcoreapp3.1\HackLock.Server.csproj.CoreCompileInputs.cache
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Server\obj\Debug\netcoreapp3.1\HackLock.Server.MvcApplicationPartsAssemblyInfo.cache
