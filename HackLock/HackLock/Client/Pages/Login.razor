@@ -1,0 +1,26 @@
+﻿@using System.Diagnostics
+@using System.Threading
+@inject UnlockService UnlockService
+
+<div class="form">
+    <input type="text" placeholder="UserName" class="form-item" @bind="_username" />
+    <input type="password" placeholder="Password" class="form-item" @bind="_password"/>
+    <button class="btn btn-primary" @onclick="TryUnlock">Unlock</button>
+</div>
+
+@code {
+    private string _username = string.Empty;
+    private string _password = String.Empty;
+
+    [Parameter]
+    public EventCallback UnlockCallback { get; set; }
+
+    private async void TryUnlock(MouseEventArgs e)
+    {
+        if (string.IsNullOrWhiteSpace(_username) || string.IsNullOrWhiteSpace(_password))
+            return;
+
+        if (await UnlockService.Unlock(_username, _password))
+            await UnlockCallback.InvokeAsync(null);
+    }
+}

@@ -4,6 +4,10 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+body {
+    background-image: url(../img/johannes-plenio-FZpCcPss9to-unsplash.jpg)
+}
+
 a, .btn-link {
     color: #0366d6;
 }
@@ -148,6 +152,10 @@ app {
     .main .top-row a, .main .top-row .btn-link {
         margin-left: 0;
     }
+
+    .loginContainer {
+        width: 75%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -155,12 +163,6 @@ app {
         flex-direction: row;
     }
 
-    .sidebar {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
 
     .main .top-row {
         position: sticky;
@@ -180,4 +182,36 @@ app {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
+
+    
+}
+
+
+.loginContainer {
+    width: 20%;
+    padding: 10px;
+    margin-top: 10%;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #1861ac;
+}
+
+.form {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-item {
+    display: block;
+    margin: auto;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-radius: 10px;
+    width: 100%;
 }

@@ -73,6 +73,13 @@ using HackLock.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\_Imports.razor"
+using HackLock.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\Pages\FetchData.razor"
 using HackLock.Shared;
 

@@ -72,6 +72,13 @@ using HackLock.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\_Imports.razor"
+using HackLock.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

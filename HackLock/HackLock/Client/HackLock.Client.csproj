@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Shared\HackLock.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
 </Project>

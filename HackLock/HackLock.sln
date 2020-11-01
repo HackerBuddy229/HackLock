@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackLock.Server", "HackLock\Server\HackLock.Server.csproj", "{F66B448D-5FB0-4CF4-BC70-6010AD5F52CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackLock.Server", "HackLock\Server\HackLock.Server.csproj", "{F66B448D-5FB0-4CF4-BC70-6010AD5F52CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackLock.Client", "HackLock\Client\HackLock.Client.csproj", "{FB5F6FAA-EBBD-4A82-B970-CDC2ECBC1C12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackLock.Client", "HackLock\Client\HackLock.Client.csproj", "{FB5F6FAA-EBBD-4A82-B970-CDC2ECBC1C12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackLock.Shared", "HackLock\Shared\HackLock.Shared.csproj", "{B8E2F3D0-99CD-491F-95C8-B1F6133E28AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackLock.Shared", "HackLock\Shared\HackLock.Shared.csproj", "{B8E2F3D0-99CD-491F-95C8-B1F6133E28AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

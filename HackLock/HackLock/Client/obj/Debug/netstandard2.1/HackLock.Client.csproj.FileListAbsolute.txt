@@ -364,8 +364,12 @@ C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1
 C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\staticwebassets\HackLock.Client.StaticWebAssets.xml
 C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\HackLock.Client.dll
 C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\HackLock.Client.pdb
-C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\integrity\cIYCSrHASaD6Ww2PFttomBZxJ2o8_40hbDPfj9Ksvqg=.hash
 C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\integrity\SXEbP1IcfN4i5524CQESAIHf6cq0Et6tjWXexLJRL14=.hash
-C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\integrity\JY2z-u_VEyTY0C8ExlWSev7WuV47Sa6f-YhUKArMnt8=.hash
 C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\integrity\YT72O4tssAU2I3VUjBrYvm-rEmaLPs4lmBKmPMx3FXc=.hash
-C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\integrity\qxrqOEqPWZUUZl35pPS4NZiGMP550bGtgEkjaSoPMdY=.hash
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Login.razor.g.cs
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\Razor\Pages\Login.razor.g.cs
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Unlocked.razor.g.cs
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\Razor\Pages\Unlocked.razor.g.cs
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\integrity\Wuut0rLxs6NrmMuxoRsalRsoR7qxj6UYRr4rwINY6PA=.hash
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\integrity\EgBjvGGTUwQKYiP1EKDK-AHvkEiUK3fcpZ99C11rGvw=.hash
+C:\Users\Rasmus\repos\HackLock\HackLock\HackLock\Client\obj\Debug\netstandard2.1\integrity\HI7ylWHn4837hD-5tSEpXwh3tf0ZIc944XwhSAOabnY=.hash

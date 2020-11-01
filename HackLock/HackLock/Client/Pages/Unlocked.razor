@@ -1,0 +1,52 @@
+﻿@using Timer = System.Timers.Timer
+<h3>Re-locking in: @_secondsLeft</h3>
+
+@code {
+    [Parameter]
+    public int InitialTime { get; set; }
+
+    [Parameter]
+    public EventCallback FinishedCallback { get; set; }
+
+
+    private TimeSpan _timeLeft;
+    private int _secondsLeft;
+
+    private Timer _countdownTimer;
+
+    private void SetTimer()
+    {
+        _countdownTimer = new Timer(1000);
+        _countdownTimer.Elapsed += async (sender, args) => { await Countdown(1); };
+        _countdownTimer.AutoReset = true;
+        _countdownTimer.Enabled = true;
+    }
+
+    private async Task Countdown(int secondsIncrement)
+    {
+        if (_timeLeft.Seconds <= 0)
+        {
+            _countdownTimer.Stop();
+            _countdownTimer.Dispose();
+            await FinishedCallback.InvokeAsync(null);
+            return;
+        }
+
+        _timeLeft = _timeLeft.Subtract(TimeSpan.FromSeconds(1));
+        _secondsLeft = _timeLeft.Seconds;
+        StateHasChanged(); //Should not be needed
+
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        SetTimer();
+    }
+
+    protected override void OnParametersSet()
+    {
+        _timeLeft = TimeSpan.FromSeconds(InitialTime);
+        _secondsLeft = _timeLeft.Seconds;
+    }
+
+}

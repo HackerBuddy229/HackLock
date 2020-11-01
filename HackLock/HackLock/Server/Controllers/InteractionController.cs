@@ -32,7 +32,7 @@ namespace HackLock.Server.Controllers
             _userService = userService;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("unlock")]
         public async Task<IActionResult> UnlockDoor([FromBody] AuthenticationRequest request)
         {
