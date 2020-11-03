@@ -1,4 +1,6 @@
 ﻿@using Timer = System.Timers.Timer
+@using System.Timers;
+
 <h3>Re-locking in: @_secondsLeft</h3>
 
 @code {
@@ -17,12 +19,12 @@
     private void SetTimer()
     {
         _countdownTimer = new Timer(1000);
-        _countdownTimer.Elapsed += async (sender, args) => { await Countdown(1); };
+        _countdownTimer.Elapsed += Countdown;
         _countdownTimer.AutoReset = true;
         _countdownTimer.Enabled = true;
     }
 
-    private async Task Countdown(int secondsIncrement)
+    private async void Countdown(Object source, ElapsedEventArgs e)
     {
         if (_timeLeft.Seconds <= 0)
         {
@@ -38,10 +40,17 @@
 
     }
 
-    protected override void OnAfterRender(bool firstRender)
+    /* protected override void OnInitialized(bool firstRender)
+    {
+        SetTimer();
+    } */
+
+    protected override void OnInitialized()
     {
         SetTimer();
     }
+
+    
 
     protected override void OnParametersSet()
     {

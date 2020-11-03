@@ -215,3 +215,7 @@ app {
     border-radius: 10px;
     width: 100%;
 }
+
+.AwaitingButton {
+    opacity: 0.5;
+}

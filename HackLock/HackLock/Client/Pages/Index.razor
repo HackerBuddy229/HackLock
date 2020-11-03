@@ -8,7 +8,7 @@
         }
         else
         {
-            <Unlocked FinishedCallback="@(() => LockCallback())" InitialTime="30"/>
+            <Unlocked FinishedCallback="LockCallback" InitialTime="15"/>
         }
         
         
@@ -22,10 +22,16 @@
     private bool Unlocked { get; set; }
 
 
-    private void UnlockCallback() => 
+    private void UnlockCallback() {
         Unlocked = true;
+        StateHasChanged();
+    }
+        
 
-    private void LockCallback() =>
+    private void LockCallback() {
         Unlocked = false;
+        StateHasChanged();
+    }
+        
 
 }

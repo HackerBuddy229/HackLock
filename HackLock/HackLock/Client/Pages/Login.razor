@@ -5,12 +5,23 @@
 <div class="form">
     <input type="text" placeholder="UserName" class="form-item" @bind="_username" />
     <input type="password" placeholder="Password" class="form-item" @bind="_password"/>
-    <button class="btn btn-primary" @onclick="TryUnlock">Unlock</button>
+    <button class="btn btn-primary @_buttonStyle" 
+    @onclick="TryUnlock">
+    Unlock</button>
 </div>
 
 @code {
     private string _username = string.Empty;
     private string _password = String.Empty;
+    private bool _awaitingUnlock = false;
+    private string _buttonStyle;
+
+
+    private void ToggleButtonAwaitState() {
+        _awaitingUnlock = !_awaitingUnlock;
+        _buttonStyle = _awaitingUnlock ? "AwaitingButton" : "";  
+    }
+    
 
     [Parameter]
     public EventCallback UnlockCallback { get; set; }
@@ -20,7 +31,15 @@
         if (string.IsNullOrWhiteSpace(_username) || string.IsNullOrWhiteSpace(_password))
             return;
 
-        if (await UnlockService.Unlock(_username, _password))
+            ToggleButtonAwaitState();
+        if (await UnlockService.Unlock(_username, _password)) {
+            ToggleButtonAwaitState();
             await UnlockCallback.InvokeAsync(null);
+        } else
+            ToggleButtonAwaitState();
+        
+            
     }
+
+
 }

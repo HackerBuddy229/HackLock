@@ -53,7 +53,7 @@ namespace HackLock.Server.Controllers
                 Timestamp = DateTime.Now.ToString(CultureInfo.InvariantCulture)
             });
 
-            _doorManipulator.Cycle();
+            Task.Run(() => _doorManipulator.Cycle());
             return Ok();
         }
     }
